@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" role="img" aria-label="Sameer Khan & Associates Logo">
+  <!-- Balance scale icon -->
+  <g transform="translate(0, 4)">
+    <!-- Vertical pole -->
+    <rect x="26" y="8" width="2" height="36" fill="#9A7B2F"/>
+    <!-- Horizontal beam -->
+    <rect x="6" y="10" width="42" height="2" fill="#9A7B2F"/>
+    <!-- Left pan rope -->
+    <line x1="10" y1="12" x2="10" y2="26" stroke="#9A7B2F" stroke-width="1.5"/>
+    <line x1="10" y1="12" x2="16" y2="26" stroke="#9A7B2F" stroke-width="1.5"/>
+    <!-- Right pan rope -->
+    <line x1="44" y1="12" x2="38" y2="26" stroke="#9A7B2F" stroke-width="1.5"/>
+    <line x1="44" y1="12" x2="50" y2="26" stroke="#9A7B2F" stroke-width="1.5"/>
+    <!-- Left pan -->
+    <path d="M7 26 Q13 30 19 26" fill="none" stroke="#9A7B2F" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Right pan -->
+    <path d="M35 26 Q41 30 47 26" fill="none" stroke="#9A7B2F" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Base -->
+    <rect x="19" y="44" width="16" height="2.5" rx="1" fill="#9A7B2F"/>
+    <!-- Center knob -->
+    <circle cx="27" cy="10" r="2.5" fill="#9A7B2F"/>
+  </g>
+
+  <!-- Firm name -->
+  <text x="62" y="28" font-family="EB Garamond, Georgia, serif" font-size="19" font-weight="600" fill="#1A1A1A" letter-spacing="0.2">Sameer Khan</text>
+  <!-- Ampersand line -->
+  <text x="62" y="28" font-family="EB Garamond, Georgia, serif" font-size="19" font-weight="600" fill="#1A1A1A" dy="0">&amp;</text>
+  <!-- Reset — draw Associates on second line -->
+  <text x="62" y="28" font-family="EB Garamond, Georgia, serif" font-size="19" font-weight="600" fill="#1A1A1A">
+    <tspan x="62" dy="0">Sameer Khan &amp; Associates</tspan>
+  </text>
+  <text x="63" y="46" font-family="Source Sans 3, Segoe UI, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#9A7B2F" letter-spacing="1.8">ADVOCATES &amp; LEGAL CONSULTANTS</text>
+  <!-- Gold rule under firm name -->
+  <rect x="62" y="33" width="192" height="1.5" fill="#9A7B2F" opacity="0.4"/>
+</svg>

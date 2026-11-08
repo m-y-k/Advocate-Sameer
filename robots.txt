@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.advocatesameerdelhi.in/sitemap.xml
