@@ -212,11 +212,56 @@
 
 .sidebar-links a:hover { color: var(--crimson); padding-left: 4px; }
 
-/* Responsive */
+/* Responsive & Mobile-First */
 @media (max-width: 768px) {
+  .page-main { padding: 24px 0 36px; }
+  .page-hero { padding-bottom: 24px; }
+  .page-hero-inner { padding-top: 20px; }
+  .page-hero h1 { font-size: 1.55rem; line-height: 1.2; }
+  .page-hero p { font-size: 0.9rem; line-height: 1.5; }
+
   .page-content-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
-  .page-sidebar { order: -1; }
-  .page-hero h1 { font-size: 1.5rem; }
+  .page-article h2 { 
+    font-size: 1.22rem; 
+    margin: 22px 0 10px; 
+    padding-bottom: 6px; 
+  }
+  .page-article p { 
+    font-size: 0.91rem; 
+    line-height: 1.62; 
+    margin-bottom: 12px; 
+  }
+  .page-list, .page-bullets { 
+    margin: 0 0 16px 16px; 
+    font-size: 0.88rem; 
+    line-height: 1.6; 
+  }
+
+  .timeline-table { 
+    font-size: 0.82rem; 
+    margin: 12px 0 16px; 
+  }
+  .tt-step, .tt-time { 
+    padding: 8px 10px; 
+  }
+
+  .faq-q { 
+    padding: 12px 14px; 
+    font-size: 0.9rem; 
+  }
+  .faq-a { 
+    padding: 12px 14px; 
+    font-size: 0.86rem; 
+    line-height: 1.6; 
+  }
+
+  .sidebar-box { 
+    padding: 16px 14px; 
+    border-radius: var(--radius); 
+  }
+  .sidebar-box h4 { font-size: 0.95rem; }
+  .sidebar-links a { font-size: 0.85rem; padding: 7px 0; }
 }

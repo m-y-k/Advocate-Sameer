@@ -1,1 +1,1 @@
-REM cleaned
+REM powershell stub
