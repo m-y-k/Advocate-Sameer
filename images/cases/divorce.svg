@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="divBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdfbf7"/>
+      <stop offset="50%" stop-color="#f3ede2"/>
+      <stop offset="100%" stop-color="#e2d5c3"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#9a7b2f"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="400" height="240" fill="url(#divBg)"/>
+  <!-- Legal Document File -->
+  <g transform="translate(110, 25)" filter="url(#shadow)">
+    <rect x="0" y="0" width="180" height="175" rx="6" fill="#ffffff" stroke="#dcd6cc" stroke-width="1.5"/>
+    <rect x="15" y="20" width="150" height="12" rx="3" fill="#333333"/>
+    <text x="90" y="29" fill="#ffffff" font-family="'EB Garamond', serif" font-size="9" font-weight="bold" text-anchor="middle" letter-spacing="1">MUTUAL DIVORCE PETITION</text>
+    <line x1="20" y1="46" x2="160" y2="46" stroke="#c0b8ac" stroke-width="2"/>
+    <line x1="20" y1="58" x2="160" y2="58" stroke="#dcd6cc" stroke-width="1.5"/>
+    <line x1="20" y1="70" x2="140" y2="70" stroke="#dcd6cc" stroke-width="1.5"/>
+    <line x1="20" y1="82" x2="155" y2="82" stroke="#dcd6cc" stroke-width="1.5"/>
+    <line x1="20" y1="94" x2="130" y2="94" stroke="#dcd6cc" stroke-width="1.5"/>
+    <!-- Stamp seal -->
+    <circle cx="135" cy="130" r="22" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="3,2"/>
+    <circle cx="135" cy="130" r="17" fill="none" stroke="url(#goldGrad)" stroke-width="1"/>
+    <text x="135" y="133" fill="#9a7b2f" font-family="sans-serif" font-size="6" font-weight="bold" text-anchor="middle">COURT SEAL</text>
+  </g>
+  <!-- Wedding Rings Separated -->
+  <g transform="translate(150, 140)">
+    <ellipse cx="25" cy="35" rx="20" ry="12" fill="none" stroke="url(#goldGrad)" stroke-width="5" transform="rotate(-20 25 35)"/>
+    <ellipse cx="75" cy="35" rx="20" ry="12" fill="none" stroke="#b0a898" stroke-width="5" transform="rotate(20 75 35)"/>
+  </g>
+</svg>

@@ -27,6 +27,12 @@ copy /Y "C:\Users\admin\.gemini\antigravity\brain\17e11128-5a31-4447-b972-c48929
 copy /Y "C:\Users\admin\.gemini\antigravity\brain\17e11128-5a31-4447-b972-c48929554249\.user_uploaded\media_1794160226979_c0fec0d5.jpg" "images\sameer-khan-suit.jpg"
 copy /Y "C:\Users\admin\.gemini\antigravity\brain\17e11128-5a31-4447-b972-c48929554249\.user_uploaded\media_1794160226979_c0fec0d5.jpg" "assets\images\sameer-khan-suit.jpg"
 
+copy /Y "C:\Users\admin\.gemini\antigravity\brain\17e11128-5a31-4447-b972-c48929554249\.user_uploaded\media_1794212894597_ef890a11.webp" "images\chamber-dwarka-wide.webp"
+copy /Y "C:\Users\admin\.gemini\antigravity\brain\17e11128-5a31-4447-b972-c48929554249\.user_uploaded\media_1794212894597_ef890a11.webp" "assets\images\chamber-dwarka-wide.webp"
+
+copy /Y "C:\Users\admin\.gemini\antigravity\brain\17e11128-5a31-4447-b972-c48929554249\.user_uploaded\media_1794212892077_3b6f49b5.webp" "images\chamber-dwarka-desk.webp"
+copy /Y "C:\Users\admin\.gemini\antigravity\brain\17e11128-5a31-4447-b972-c48929554249\.user_uploaded\media_1794212892077_3b6f49b5.webp" "assets\images\chamber-dwarka-desk.webp"
+
 echo [3/3] Deleting extra temporary and reference images to save space...
 if exist "images\logo-banner.png" del /Q "images\logo-banner.png"
 if exist "index.html.backup" del /Q "index.html.backup"

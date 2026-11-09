@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="drtBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+    <linearGradient id="moneyGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#drtBg)"/>
+  <!-- DRT Currency Notes & Gavel Stack -->
+  <g transform="translate(110, 45)">
+    <!-- Stack of Notes -->
+    <rect x="20" y="55" width="140" height="55" rx="4" fill="#047857" stroke="#10b981" stroke-width="2"/>
+    <circle cx="90" cy="82" r="16" fill="none" stroke="#6ee7b7" stroke-width="2"/>
+    <text x="90" y="88" fill="#ecfdf5" font-family="'EB Garamond', serif" font-size="16" font-weight="bold" text-anchor="middle">&#8377;</text>
+    <!-- Gavel Striking Plinth -->
+    <rect x="0" y="105" width="180" height="15" rx="3" fill="#78350f" stroke="#b45309"/>
+  </g>
+  <text x="200" y="215" fill="#a7f3d0" font-family="'EB Garamond', serif" font-size="14" font-weight="600" text-anchor="middle" letter-spacing="1.5">SARFAESI &amp; BANK RECOVERY TRIBUNAL</text>
+</svg>

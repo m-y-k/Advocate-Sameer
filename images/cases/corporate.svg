@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="corpBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="corpGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#corpBg)"/>
+  <!-- Commercial Briefcase & Corporate Emblem -->
+  <g transform="translate(130, 40)">
+    <!-- Briefcase -->
+    <rect x="10" y="35" width="120" height="85" rx="8" fill="#334155" stroke="url(#corpGold)" stroke-width="2.5"/>
+    <rect x="45" y="15" width="50" height="25" rx="5" fill="none" stroke="url(#corpGold)" stroke-width="3"/>
+    <line x1="10" y1="75" x2="130" y2="75" stroke="#475569" stroke-width="2"/>
+    <rect x="62" y="68" width="16" height="15" rx="2" fill="url(#corpGold)"/>
+  </g>
+  <text x="200" y="215" fill="#fde047" font-family="'EB Garamond', serif" font-size="14" font-weight="600" text-anchor="middle" letter-spacing="1.5">COMMERCIAL CONTRACTS &amp; ARBITRATION</text>
+</svg>

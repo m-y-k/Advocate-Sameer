@@ -217,6 +217,26 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /* ────────────────────────────────────────────
+     TESTIMONIAL SLIDER — Mobile Left/Right Arrows
+  ──────────────────────────────────────────── */
+  const testiTrack = document.getElementById('testi-track');
+  const testiPrev  = document.getElementById('testi-prev');
+  const testiNext  = document.getElementById('testi-next');
+
+  if (testiTrack && testiPrev && testiNext) {
+    function getScrollDist() {
+      var card = testiTrack.querySelector('.testi-card');
+      return card ? card.offsetWidth + 12 : 280;
+    }
+    testiPrev.addEventListener('click', function () {
+      testiTrack.scrollBy({ left: -getScrollDist(), behavior: 'smooth' });
+    });
+    testiNext.addEventListener('click', function () {
+      testiTrack.scrollBy({ left: getScrollDist(), behavior: 'smooth' });
+    });
+  }
+
+  /* ────────────────────────────────────────────
      FAQ ACCORDION (practice pages)
   ──────────────────────────────────────────── */
   document.querySelectorAll('.faq-q').forEach(function (btn) {

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="matBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf5ef"/>
+      <stop offset="100%" stop-color="#eddcd0"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#9a7b2f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#matBg)"/>
+  <g transform="translate(130, 35)">
+    <!-- House outline -->
+    <path d="M70,20 L135,70 L135,145 L5,145 L5,70 Z" fill="#ffffff" stroke="#c4b5a0" stroke-width="3"/>
+    <path d="M70,12 L142,68 L130,78 L70,30 L10,78 L-2,68 Z" fill="url(#gold)"/>
+    <!-- Family figures -->
+    <!-- Parent 1 -->
+    <circle cx="45" cy="85" r="12" fill="#4a5568"/>
+    <path d="M28,135 C28,110 62,110 62,135 Z" fill="#4a5568"/>
+    <!-- Child -->
+    <circle cx="70" cy="100" r="8" fill="#d97706"/>
+    <path d="M58,135 C58,118 82,118 82,135 Z" fill="#d97706"/>
+    <!-- Parent 2 -->
+    <circle cx="95" cy="85" r="12" fill="#718096"/>
+    <path d="M78,135 C78,110 112,110 112,135 Z" fill="#718096"/>
+  </g>
+  <text x="200" y="210" fill="#78350f" font-family="'EB Garamond', serif" font-size="14" font-weight="600" text-anchor="middle" letter-spacing="1">MATRIMONIAL &amp; MAINTENANCE RELIEF</text>
+</svg>
