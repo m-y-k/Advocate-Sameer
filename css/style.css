@@ -1821,6 +1821,19 @@ p:last-child { margin-bottom: 0; }
     text-align: center;
     box-sizing: border-box;
   }
+  .hero-bar-memberships {
+    align-items: center;
+    margin-top: 14px;
+    width: 100%;
+  }
+  .hbm-tags {
+    justify-content: center;
+    gap: 6px;
+  }
+  .hbm-tag {
+    font-size: 0.73rem;
+    padding: 5px 10px;
+  }
 
   /* Practice Areas / Cases Cards Mobile (Big Rectangular Photos, Less Text - Pic 1 Style) */
   .exp-grid { 
