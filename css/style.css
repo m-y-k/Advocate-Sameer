@@ -492,6 +492,46 @@ p:last-child { margin-bottom: 0; }
   font-size: 1rem;
 }
 
+/* ---------- HERO BAR MEMBERSHIPS (RECOGNIZED BAR MEMBERSHIPS) ---------- */
+.hero-bar-memberships {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+.hbm-label {
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold-dark);
+}
+.hbm-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.hbm-tag {
+  background: #18181b;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  transition: all 0.2s ease;
+}
+.hbm-tag:hover {
+  background: var(--gold-dark);
+  color: #ffffff;
+  border-color: var(--gold);
+}
+
 /* ---------- CLEAN EXECUTIVE PROFILE DP ---------- */
 .hero-photo-wrap {
   position: relative;
@@ -665,6 +705,68 @@ p:last-child { margin-bottom: 0; }
 /* Contact Address Compact Switchers */
 .addr-desktop { display: inline; }
 .addr-mobile  { display: none; }
+
+/* ---------- HERO BAR MEMBERSHIPS ROW ---------- */
+.hero-bar-memberships {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+.hbm-label {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  white-space: nowrap;
+  padding-top: 6px;
+  flex-shrink: 0;
+}
+.hbm-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.hbm-tag {
+  display: inline-block;
+  background: var(--dark);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-size: 0.73rem;
+  font-weight: 600;
+  padding: 5px 11px;
+  border-radius: 3px;
+  letter-spacing: 0.01em;
+  transition: background 0.18s;
+}
+.hbm-tag:hover { background: var(--gold-dark); }
+
+/* ---------- PRACTICE AREAS EXTRAS & SHOW ALL ---------- */
+.exp-showall-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0 0;
+  flex-wrap: wrap;
+}
+.exp-showmore-btn {
+  background: var(--white);
+  color: var(--dark);
+  border: 1.5px solid var(--gold);
+  gap: 8px;
+  font-size: 0.88rem;
+}
+.exp-showmore-btn:hover {
+  background: var(--gold-pale);
+  border-color: var(--gold-dark);
+}
+.exp-viewall-btn {
+  font-size: 0.88rem;
+}
 
 .about-highlights-4 {
   display: grid;
@@ -928,6 +1030,54 @@ p:last-child { margin-bottom: 0; }
 .emb-pill-cta:hover {
   background: var(--gold);
   color: #ffffff;
+}
+
+/* ---------- PRACTICE AREAS SHOW ALL / VIEW ALL ROW ---------- */
+.exp-showall-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+.exp-showmore-btn {
+  background: var(--gold);
+  color: var(--white);
+  padding: 10px 22px;
+  border-radius: var(--radius);
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.exp-showmore-btn:hover {
+  background: var(--gold-dark);
+  transform: translateY(-2px);
+}
+.exp-viewall-btn {
+  padding: 10px 22px;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  border: 1.5px solid var(--gold);
+  color: var(--dark);
+  border-radius: var(--radius);
+  background: #ffffff;
+  transition: all 0.2s ease;
+}
+.exp-viewall-btn:hover {
+  background: var(--gold);
+  color: var(--white);
+  transform: translateY(-2px);
 }
 
 /* ---------- 2-LINE SLIDING MARQUEE FOR COURTS ---------- */
@@ -1829,6 +1979,21 @@ p:last-child { margin-bottom: 0; }
   /* Compact mobile addresses in Contact section */
   .addr-desktop { display: none !important; }
   .addr-mobile  { display: inline !important; }
+
+  /* Hero bar memberships — stack nicely on mobile */
+  .hero-bar-memberships {
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    margin-top: 14px;
+  }
+  .hbm-label { padding-top: 0; font-size: 0.70rem; text-align: center; }
+  .hbm-tags { justify-content: center; gap: 6px; }
+  .hbm-tag { font-size: 0.72rem; padding: 5px 10px; }
+
+  /* Practice area show-more row */
+  .exp-showall-row { gap: 8px; margin-top: 14px; }
+  .exp-showmore-btn, .exp-viewall-btn { font-size: 0.82rem; padding: 9px 16px; }
 
   /* Footer Mobile */
   .footer-sg-grid  { grid-template-columns: 1fr; gap: 28px; }
