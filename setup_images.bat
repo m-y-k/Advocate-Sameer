@@ -15,8 +15,10 @@ copy /Y "C:\Users\admin\.gemini\antigravity\brain\17e11128-5a31-4447-b972-c48929
 copy /Y "C:\Users\admin\.gemini\antigravity\brain\17e11128-5a31-4447-b972-c48929554249\.user_uploaded\media_1794162000348_013a5d42.webp" "assets\images\logo.webp"
 
 echo [2/3] Copying Photos...
-copy /Y "C:\Users\admin\.gemini\antigravity\brain\17e11128-5a31-4447-b972-c48929554249\.user_uploaded\media_1794160226930_5f9a10f1.jpg" "images\sameer-khan.jpg"
-copy /Y "C:\Users\admin\.gemini\antigravity\brain\17e11128-5a31-4447-b972-c48929554249\.user_uploaded\media_1794160226930_5f9a10f1.jpg" "assets\images\sameer-khan-court.jpg"
+copy /Y "C:\Users\admin\.gemini\antigravity\brain\17e11128-5a31-4447-b972-c48929554249\.user_uploaded\media_1794297103135_408acd14.webp" "images\sameer-khan-robe.webp"
+copy /Y "C:\Users\admin\.gemini\antigravity\brain\17e11128-5a31-4447-b972-c48929554249\.user_uploaded\media_1794297103135_408acd14.webp" "images\sameer-khan.webp"
+copy /Y "C:\Users\admin\.gemini\antigravity\brain\17e11128-5a31-4447-b972-c48929554249\.user_uploaded\media_1794297103135_408acd14.webp" "images\sameer-khan.jpg"
+copy /Y "C:\Users\admin\.gemini\antigravity\brain\17e11128-5a31-4447-b972-c48929554249\.user_uploaded\media_1794297103135_408acd14.webp" "assets\images\sameer-khan-court.jpg"
 
 copy /Y "C:\Users\admin\.gemini\antigravity\brain\17e11128-5a31-4447-b972-c48929554249\.user_uploaded\media_1794160226944_a8d47b03.jpg" "images\office-1.jpg"
 copy /Y "C:\Users\admin\.gemini\antigravity\brain\17e11128-5a31-4447-b972-c48929554249\.user_uploaded\media_1794160226944_a8d47b03.jpg" "assets\images\chamber-wide.jpg"
