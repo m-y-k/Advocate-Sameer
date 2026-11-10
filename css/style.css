@@ -1540,6 +1540,92 @@ p:last-child { margin-bottom: 0; }
 
 #scroll-top { display: none; }
 
+/* ---------- FAQ ACCORDION (HOMEPAGE & GLOBAL) ---------- */
+.faq-section {
+  padding: 64px 0 70px;
+  background: #fdfcf9;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.faq-list {
+  max-width: 860px;
+  margin: 32px auto 0;
+}
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+  background: var(--white);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.faq-item:hover {
+  border-color: var(--gold);
+  box-shadow: 0 4px 14px rgba(154, 123, 47, 0.08);
+}
+.faq-item.open {
+  border-color: var(--gold);
+  box-shadow: 0 4px 18px rgba(154, 123, 47, 0.12);
+}
+.faq-q {
+  width: 100%;
+  text-align: left;
+  padding: 16px 20px;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--dark);
+  background: var(--white);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.faq-q:hover {
+  background: var(--gold-pale);
+  color: var(--gold-dark);
+}
+.faq-item.open .faq-q {
+  background: #fbf7ee;
+  color: var(--gold-dark);
+  font-weight: 700;
+}
+.faq-chevron,
+.faq-q svg,
+.faq-q i {
+  color: var(--gold);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+.faq-item.open .faq-chevron,
+.faq-item.open .faq-q svg,
+.faq-item.open .faq-q i {
+  transform: rotate(180deg);
+}
+.faq-a {
+  display: none;
+  padding: 16px 20px 20px;
+  font-family: var(--font-sans);
+  font-size: 0.91rem;
+  color: var(--text);
+  line-height: 1.75;
+  background: var(--white);
+  border-top: 1px solid rgba(154, 123, 47, 0.15);
+}
+.faq-a p {
+  margin: 0 0 10px;
+}
+.faq-a p:last-child {
+  margin-bottom: 0;
+}
+.faq-item.open .faq-a {
+  display: block;
+}
+
 /* ---------- FADE IN ---------- */
 .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.55s ease, transform 0.55s ease; }
 .fade-in.visible { opacity: 1; transform: none; }
