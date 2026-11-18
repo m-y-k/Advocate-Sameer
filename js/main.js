@@ -255,6 +255,95 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   /* ────────────────────────────────────────────
+     DEVELOPER WEBSITE REQUEST MODAL & FORM
+     (Sends to: mohammad.yusufkhan12345@gmail.com)
+  ──────────────────────────────────────────── */
+  const devModalOverlay = document.getElementById('dev-modal-overlay');
+  const devOpenBtn      = document.getElementById('open-dev-modal-btn');
+  const devCloseBtn     = document.getElementById('dev-modal-close-btn');
+  const devForm         = document.getElementById('dev-request-form');
+  const devSuccess      = document.getElementById('dev-form-success');
+  const devError        = document.getElementById('dev-form-error');
+
+  function openDevModal() {
+    if (devModalOverlay) {
+      devModalOverlay.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      const firstInput = devModalOverlay.querySelector('input[name="name"]');
+      if (firstInput) setTimeout(function () { firstInput.focus(); }, 150);
+    }
+  }
+
+  function closeDevModal() {
+    if (devModalOverlay) {
+      devModalOverlay.style.display = 'none';
+      document.body.style.overflow = '';
+      if (devSuccess) devSuccess.style.display = 'none';
+      if (devError)   devError.style.display   = 'none';
+    }
+  }
+
+  if (devOpenBtn) {
+    devOpenBtn.addEventListener('click', openDevModal);
+  }
+
+  if (devCloseBtn) {
+    devCloseBtn.addEventListener('click', closeDevModal);
+  }
+
+  if (devModalOverlay) {
+    devModalOverlay.addEventListener('click', function (e) {
+      if (e.target === devModalOverlay) {
+        closeDevModal();
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && devModalOverlay.style.display === 'flex') {
+        closeDevModal();
+      }
+    });
+  }
+
+  if (devForm) {
+    devForm.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const submitBtn = document.getElementById('dev-submit-btn');
+      const origText  = submitBtn ? submitBtn.innerHTML : 'Send Requirements';
+      if (submitBtn) {
+        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Submitting...';
+        submitBtn.disabled  = true;
+      }
+      if (devSuccess) devSuccess.style.display = 'none';
+      if (devError)   devError.style.display   = 'none';
+
+      try {
+        const formData = new FormData(devForm);
+        const resp     = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        });
+        const result   = await resp.json();
+
+        if (result.success) {
+          devForm.reset();
+          if (devSuccess) devSuccess.style.display = 'block';
+        } else {
+          if (devError) devError.style.display = 'block';
+        }
+      } catch (err) {
+        if (devError) devError.style.display = 'block';
+      } finally {
+        if (submitBtn) {
+          submitBtn.innerHTML = origText;
+          submitBtn.disabled  = false;
+        }
+      }
+    });
+  }
+
+  /* ────────────────────────────────────────────
      DISABLE RIGHT-CLICK AND TEXT SELECTION
    ──────────────────────────────────────────── */
   document.addEventListener('contextmenu', function (e) {

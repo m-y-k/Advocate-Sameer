@@ -399,13 +399,105 @@
       </div>
     </div>
     <div class="footer-sg-bottom">
-      <p>&copy;2014-2025 All Rights Reserved Advocate Sameer Khan &amp; Associates</p>
+      <div class="footer-bottom-left">
+        <p>&copy; 2014–2025 All Rights Reserved Advocate Sameer Khan &amp; Associates</p>
+        <div class="dev-credits-row">
+          <span>Engineered by <strong>Yusuf Khan</strong></span>
+          <span class="dev-credits-sep">·</span>
+          <button type="button" id="open-dev-modal-btn" class="dev-hire-btn">
+            <i class="fa-solid fa-code"></i> Need a Website? Submit Request
+          </button>
+        </div>
+      </div>
       <button class="footer-scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'});" aria-label="Scroll to top">
         <i class="fa-solid fa-chevron-up"></i>
       </button>
     </div>
   </div>
 </footer>
+
+<!-- ═══════════════════════════════════════════
+  DEVELOPER WEBSITE REQUEST MODAL (TO: mohammad.yusufkhan12345@gmail.com)
+═══════════════════════════════════════════ -->
+<div id="dev-modal-overlay" class="dev-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="dev-modal-title" style="display:none;">
+  <div class="dev-modal-card">
+    <button type="button" class="dev-modal-close" id="dev-modal-close-btn" aria-label="Close modal">&times;</button>
+    
+    <div class="dev-modal-header">
+      <div class="dev-badge"><i class="fa-solid fa-laptop-code"></i> Web Design &amp; Development</div>
+      <h3 id="dev-modal-title">Need a High-Performance Website?</h3>
+      <p class="dev-modal-sub">
+        Looking for a fast, modern, and SEO-optimized website for your firm or business? Submit your requirements below — direct query to <strong>Yusuf Khan</strong> at <strong>mohammad.yusufkhan12345@gmail.com</strong>.
+      </p>
+    </div>
+
+    <form id="dev-request-form" class="dev-form">
+      <input type="hidden" name="access_key" value="80cdf4a8-5394-421c-99f2-680f017ef033" />
+      <input type="hidden" name="from_name" value="Website Dev Lead" />
+      <input type="hidden" name="to" value="mohammad.yusufkhan12345@gmail.com" />
+      <input type="hidden" name="subject" value="New Website Development Project Inquiry - Yusuf Khan" />
+
+      <div class="dev-form-grid">
+        <div class="dev-form-group">
+          <label for="dev-name">Your Full Name / Firm *</label>
+          <input type="text" id="dev-name" name="name" placeholder="e.g. Rahul Sharma" required />
+        </div>
+
+        <div class="dev-form-group">
+          <label for="dev-phone">WhatsApp / Phone Number *</label>
+          <input type="tel" id="dev-phone" name="phone" placeholder="e.g. +91 98765 43210" required />
+        </div>
+
+        <div class="dev-form-group">
+          <label for="dev-email">Your Email Address *</label>
+          <input type="email" id="dev-email" name="email" placeholder="e.g. rahul@example.com" required />
+        </div>
+
+        <div class="dev-form-group">
+          <label for="dev-type">Website Type *</label>
+          <select id="dev-type" name="project_type">
+            <option value="Law Firm / Legal Practice Website">Law Firm / Legal Practice Website</option>
+            <option value="Corporate / Company Website">Corporate / Company Website</option>
+            <option value="Doctor / Healthcare / Clinic">Doctor / Healthcare / Clinic</option>
+            <option value="E-Commerce / Online Store">E-Commerce / Online Store</option>
+            <option value="Personal Portfolio / Branding">Personal Portfolio / Branding</option>
+            <option value="Custom Web Application / Portal">Custom Web Application / Portal</option>
+            <option value="Other Custom Project">Other Custom Project</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="dev-form-group">
+        <label for="dev-timeline">Expected Timeline &amp; Budget</label>
+        <select id="dev-timeline" name="timeline_budget">
+          <option value="Urgent (Ready in 1–2 Weeks)">Urgent (Ready in 1–2 Weeks)</option>
+          <option value="Standard (Ready in 2–4 Weeks)" selected>Standard (Ready in 2–4 Weeks)</option>
+          <option value="Flexible Timeline">Flexible Timeline / Discuss on Call</option>
+        </select>
+      </div>
+
+      <div class="dev-form-group">
+        <label for="dev-message">Project Requirements &amp; Reference Websites *</label>
+        <textarea id="dev-message" name="message" rows="3" placeholder="Describe your website goals, number of pages, must-have features (such as WhatsApp chat, contact forms, Google SEO ranking), or reference websites..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary dev-submit-btn" id="dev-submit-btn">
+        <i class="fa-solid fa-paper-plane" style="margin-right:6px;"></i> Send Website Requirements
+      </button>
+
+      <div id="dev-form-success" class="dev-form-alert dev-success" style="display:none;">
+        <i class="fa-solid fa-circle-check"></i> Thank you! Your website requirements have been sent to <strong>mohammad.yusufkhan12345@gmail.com</strong>. We will get in touch on WhatsApp or Email shortly.
+      </div>
+      <div id="dev-form-error" class="dev-form-alert dev-error" style="display:none;">
+        <i class="fa-solid fa-circle-exclamation"></i> Network issue. You can directly email your requirements to <a href="mailto:mohammad.yusufkhan12345@gmail.com" style="text-decoration:underline;">mohammad.yusufkhan12345@gmail.com</a>.
+      </div>
+
+      <div class="dev-direct-contact">
+        <span>Direct Contact: <a href="mailto:mohammad.yusufkhan12345@gmail.com"><i class="fa-solid fa-envelope"></i> mohammad.yusufkhan12345@gmail.com</a></span>
+      </div>
+    </form>
+  </div>
+</div>
 
 <div id="mobile-bottom-bar" class="mobile-bottom-bar" role="navigation" aria-label="Mobile quick contact">
   <a href="tel:+919818151568" class="mbb-btn mbb-call" aria-label="Call Advocate Sameer Khan">
